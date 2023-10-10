@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: Image Embedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Embedding Images in HTML </h1>
+    <div class="imgContainer">
+        <div class="jpeg">
+            <figure class="sunset-jpeg">
+                <img src="assets/sunset-jpeg.jpg" alt="A jpeg of a sunset">
+                <figcaption> A jpeg of a beautiful sunset with low comression</figcaption>
+            </figure>
+            <figure class="sunset-jpeg">
+                <img src="assets/sunset-mid-compression.jpg" alt="A jpeg of a beautiful sunset with medium compression">
+                <figcaption> A jpeg of a beautiful sunset with medium compression
+                    <p> we can see that medium compression does not sacrifice much quality</p>
+                </figcaption>
+            </figure>
+            <figure class="sunset-jpeg">
+                <img src="assets/sunset-high-compression.jpg" alt="A jpeg of a beautiful sunset with High compression">
+                <figcaption> A jpeg of a beautiful sunset with High compression
+                    <p> we can see that high compression leads to evident loss of quality</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="png">
+            <figure class="ogr-PNG bordered">
+                <img src="assets/oneGoodReason-PNG.png" alt="A png of an artwork in 24 bit">
+                <figcaption> A png of an artwork in 24 bit</figcaption>
+            </figure>
+            <figure class="ogr-PNG">
+                <img src="assets/oneGoodReason-PNG-8bit.png" alt="A png of an artwork in 8bit">
+                <figcaption> A png of an artwork in 8bit
+                    <p> We can see that converting into an 8bit png does not down grade quality by much</p>
+                </figcaption>
+            </figure>
+            <figure class="ogr-PNG">
+                <img src="assets/oneGoodReason-PNG-8bit-compressed.png" alt="A png of an artwork in 8bit and compressed">
+                <figcaption> A png of an artwork in 8bit and compressed
+                    <p> We can see that compressing the 8bit png leads to great loss in quality, especially the semi-transparent pixels</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gif-svg">
+            <figure class="yeezus-gif bordered">
+                <img src="assets/yeezus-gif.gif" alt="A gif of the album cover yeezus">
+                <figcaption> A gif of an album cover
+                    <p> we can see the effect of the contrast filter</p>
+                </figcaption>
+            </figure>
+            <figure class="helmet-svg">
+                <img src="assets/frog-mouth-helm.svg" alt="An svg of a helmet">
+                <figcaption> An svg of a helmet
+                    <p> here we can see the effect of the blur filter</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="mountains">
+            <figure class="mountains-svg">
+                <img src="assets/mountains-svg.svg" id="mountains-svg" alt="An svg of a helmet">
+                <figcaption> An svg of mountains</figcaption>
+            </figure>
+            <figure class="mountains-png">
+                <img src="assets/mountains-png.png" id="mountains-png" alt="A png of mountains">
+                <figcaption> A png of mountains</figcaption>
+            </figure>
+            <div class="break-row"></div>
+            <button id="scaleUp">
+                Scale Up
+            </button>
+        </div>
+
+
+    </div>
+        
+        
+
+
+        
+
+</body>
+<script src="app.js"></script>
+</html>
